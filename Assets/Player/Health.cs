@@ -4,10 +4,10 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public int MaxHealth = 100;
-    public int CurrentHealth;
+    public int health;
     void Start()
     {
-        CurrentHealth = MaxHealth;
+        health = MaxHealth;
     }
 
     void Update()
@@ -16,13 +16,13 @@ public class Health : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("{gameObject.name} помер");
+        Debug.Log(gameObject.name + " помер");
         Destroy(gameObject);
     }
     public void TakeDamage(int amount)
         {
-            CurrentHealth -= amount;
-            if (CurrentHealth <= 0)
+           health -=amount;
+            if (health <= 0)
                 Die();
         }
 }

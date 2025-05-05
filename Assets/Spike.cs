@@ -15,7 +15,7 @@ public class Spike : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
        if (collision.gameObject.tag=="Player")
- playerHealth.TakeDamage(Damage);
+              playerHealth.TakeDamage(Damage);
     }
 }
 
