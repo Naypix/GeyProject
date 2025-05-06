@@ -21,7 +21,8 @@ public class PlayerScript : MonoBehaviour
     }
     void Update()
     {
-        animator.SetBool("Right", false);
+        animator.SetInteger("Left", 0);
+        animator.SetInteger("Right", 0);
         moveSpeed = 30f;
         coordinate = Vector2.zero;
 
@@ -37,12 +38,12 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             coordinate.x++;
-
+             animator.SetInteger("Right", 2);
         }
         if (Input.GetKey(KeyCode.A))
         {
             coordinate.x--;
-            animator.SetBool("Right", true);
+            animator.SetInteger("Left", 1);
         }
         if (Input.GetKey(KeyCode.LeftShift))// Прискорення
         {
