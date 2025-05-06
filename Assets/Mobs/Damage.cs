@@ -15,14 +15,6 @@ public class Damage : MonoBehaviour
 
     void Start()
     {
-        /* mob = GetComponent<Mob>();
-         playerHealth = player.GetComponent<Health>(); // Отримуємо компонент Health гравця
-         player = GameObject.FindGameObjectWithTag("Player")?.transform;// пошук об'єкта з тегом "Player"
-         if (player == null || playerHealth == null)
-         {
-             Debug.LogError("Player not found!");
-             return;
-         }*/
         mob = GetComponent<Mob>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform; // Спочатку знайди гравця
 
@@ -34,10 +26,6 @@ public class Damage : MonoBehaviour
 
         playerHealth = player.GetComponent<Health>(); // Потім отримаємо компонент
 
-        if (playerHealth == null)
-        {
-            Debug.LogError("Player Health component not found!");
-        }
     }
 
 

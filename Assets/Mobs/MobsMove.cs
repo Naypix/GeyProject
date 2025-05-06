@@ -22,7 +22,7 @@ public class MobsMove : MonoBehaviour
 
     void Update()
     {
-        if (mob == null|| !isMoving) return;// якщо моба немає або не рухається, виходимо з функції
+        if (mob == null|| !isMoving) return;// якщо моба немає або не рухається, виходимо з функції   
 
         transform.position = Vector2.MoveTowards(transform.position, targetPoint, mob.speed * Time.deltaTime);// рух до точки
 
