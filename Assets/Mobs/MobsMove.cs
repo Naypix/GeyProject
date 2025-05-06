@@ -12,6 +12,8 @@ public class MobsMove : MonoBehaviour
 
     private Vector2 targetPoint;
 
+    public bool isMoving = true; 
+
     void Start()
     {
         mob = GetComponent<Mob>();
@@ -20,11 +22,11 @@ public class MobsMove : MonoBehaviour
 
     void Update()
     {
-        if (mob == null) return;
+        if (mob == null|| !isMoving) return;// якщо моба немає або не рухається, виходимо з функції
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPoint, mob.speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, targetPoint, mob.speed * Time.deltaTime);// рух до точки
 
-        if (Vector2.Distance(transform.position, targetPoint) < 0.1f)
+        if (Vector2.Distance(transform.position, targetPoint) < 0.1f)// перехід до нової точки
         {
             PickNewTarget();
         }
