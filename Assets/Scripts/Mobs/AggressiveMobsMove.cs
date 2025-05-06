@@ -3,29 +3,29 @@ using UnityEngine;
 
 public class AggressiveMobsMove : MonoBehaviour 
 {
-    public float aggroDistance = 3f;
+    public float aggroDistance = 30f;
 
     private Mob mob;
-    private Transform player;
+    private Transform player;// Змінна в яку присвоюється система координат
     private MobsMove basicMoveScript;
     
     void Start() 
     {
-        mob = GetComponent<Mob>();
+        mob = GetComponent<Mob>();// Присвоєння для змінної компонента з скрипту <Mob>
         player = GameObject.FindGameObjectWithTag("Player")?.transform;// пошук об'єкта з тегом "Player"
         if (player == null) 
         {
             Debug.LogError("Player not found!");
             return;
         }
-        basicMoveScript = GetComponent<MobsMove>();
+        basicMoveScript = GetComponent<MobsMove>();// Звичайний скрипт руху мобів
     }
 
     void Update() 
     {
-        if (mob == null) return; 
+        if (mob == null) return; // Якщо не знайдено моба нічого не відбувається
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);//Обрахунок дистанції між мобом і гравцем
 
         if (distanceToPlayer <= aggroDistance) 
         {

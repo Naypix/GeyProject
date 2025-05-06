@@ -1,29 +1,27 @@
-using JetBrains.Annotations;
+
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     public int MaxHealth = 100;
-    public int health;
+    public int health;// Поточне здоров'я
+    public bool IsDead = false;
     void Start()
     {
         health = MaxHealth;
     }
-
-    void Update()
+    public void TakeDamage(int amount)// Присвоєння урону об'єкту
     {
-        
+        health -= amount;
+        if (health <= 0)
+            Die();
     }
     void Die()
     {
         Debug.Log(gameObject.name + " помер");
+        IsDead = true;
         Destroy(gameObject);
+
     }
-    public void TakeDamage(int amount)
-        {
-           health -=amount;
-            if (health <= 0)
-                Die();
-        }
 }
 

@@ -5,10 +5,10 @@ public class MobsMove : MonoBehaviour
     private Mob mob;
 
     // Межі карти
-    public float minX = -2f;
-    public float maxX = 2f;
-    public float minY = -2f;
-    public float maxY = 2f;
+    public float minX = -20f;
+    public float maxX = 20f;
+    public float minY = -20f;
+    public float maxY = 20f;
 
     private Vector2 targetPoint;
 

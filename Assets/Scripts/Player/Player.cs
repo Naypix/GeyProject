@@ -1,22 +1,20 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-   
-    private Rigidbody2D rb;
+    public float moveSpeed = 30f;
+    private Rigidbody2D rb; //Створення змінної класу Фізики
     private Vector2 coordinate;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();//Присвоєння компоненту фізики
         
     }
-
-
     void Update()
     {
-        moveSpeed = 5f;
+        moveSpeed = 30f;
         coordinate = Vector2.zero;
 
 
@@ -36,19 +34,13 @@ public class PlayerScript : MonoBehaviour
         {
             coordinate.x--;
         }
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))// Прискорення
         {
-            moveSpeed = 7.9f;
+            moveSpeed = 35f;
         }
-       
-
-
     }
-    
-   
-
     void FixedUpdate()
     {
-        rb.linearVelocity = coordinate.normalized * moveSpeed;
+        rb.linearVelocity = coordinate.normalized * moveSpeed; //Нормалізація швидкості по діагоналі
     }
 }

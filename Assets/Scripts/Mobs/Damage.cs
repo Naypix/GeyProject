@@ -6,7 +6,7 @@ public class Damage : MonoBehaviour
     public float attackCooldown = 1f; // Час між атаками
     public float lastAttackTime = 0f; // Час останньої атаки
 
-    public float attackDistance = 1f;
+    public float attackDistance = 10f;
 
     private Mob mob;
     private Transform player;
