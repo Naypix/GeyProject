@@ -47,7 +47,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftShift))// Прискорення
         {
-            moveSpeed = 35f;
+            moveSpeed = 45f;
         }
     }
     void FixedUpdate()

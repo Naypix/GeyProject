@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 914891f6c7ce3ad4784d8a19a4ed2513
+guid: e70b6d2d7d01acf42ab4c73f71f71138
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5851607502144689434
-    second: New_Piskel-1.png_3-1.png_1-1.png_0
+      213: -9162987687379477944
+    second: fgdgdf_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,20 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New_Piskel-1.png_3-1.png_1-1.png_0
+      name: fgdgdf_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 13
-        width: 23
+        x: 23
+        y: 7
+        width: 18
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1558522506153150800000000000000
-      internalID: 5851607502144689434
+      spriteID: 84ad774fe3786d080800000000000000
+      internalID: -9162987687379477944
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New_Piskel-1.png_3-1.png_1-1.png_0: 5851607502144689434
+      fgdgdf_0: -9162987687379477944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
